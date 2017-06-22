@@ -13,7 +13,7 @@ define(['jquery', 'uiComponent', 'ko'], function ($, Component, ko) {
         getListFeaturedProduct: function () {
             if (!listFeaturedProduct().length) {
                 jQuery.ajax({
-                    url: '/magento2-develop/featuredproduct/featured/product',
+                    url: '/featuredproduct/featured/product',
                     type: 'GET',
                     complete: function (data) {
                         listFeaturedProduct(JSON.parse(data.responseText));

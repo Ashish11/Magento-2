@@ -1,4 +1,9 @@
 <?xml version="1.0"?>
+<!--
+Created By: Ashish Ranade On : Jun 5, 2017 4:35:56 PM
+Project: magento2-develop
+File: module.xml
+-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <module name="Ashish_Featuredproduct" setup_version="1.0.0" />
 </config>

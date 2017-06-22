@@ -1,19 +1,11 @@
 <?xml version="1.0"?>
+<!--
+Created By: Ashish Ranade On : Jun 5, 2017 4:35:56 PM
+Project: magento2-develop
+File: featuredproduct_featured_product.xml
+-->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <referenceContainer name="content">
-        <block class="Ashish\Featuredproduct\Block\Featuredproduct" name="featured_product" template="Ashish_Featuredproduct::featuredproduct.phtml">
-<!--            <arguments>
-                <argument name="jsLayout" xsi:type="array">
-                    <item name="components" xsi:type="array">
-                        <item name="featuredproduct-list" xsi:type="array">
-                            <item name="component" xsi:type="string">Ashish_Featuredproduct/js/view/featuredproduct/list</item>
-                            <item name="config" xsi:type="array">
-                                <item name="template" xsi:type="string">Ashish_Featuredproduct/featuredproduct/list</item>
-                            </item>
-                        </item>
-                    </item>
-                </argument>
-            </arguments>            -->
-        </block>
+        <block class="Ashish\Featuredproduct\Block\Featuredproduct" name="featured_product" template="Ashish_Featuredproduct::featuredproduct.phtml" />
     </referenceContainer>
 </page>
