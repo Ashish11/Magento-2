@@ -1,0 +1,30 @@
+<?php
+//$collection = $block->getFeaturedProducts();
+//echo '<pre>';
+//foreach ($collection as $product) {
+//    print_r($product->getData());
+//}
+?>
+
+<div id="featuredproduct-page">
+    <div id="block-featuredproduct-list" data-bind="scope:'featuredproduct-list'" class="block">
+        <!-- ko template: getTemplate() --><!-- /ko -->
+
+        
+    </div>
+</div>
+
+<script type="text/x-magento-init">
+            { 
+                "#block-featuredproduct-list": {
+                    "Magento_Ui/js/core/app": {
+                       "components": {
+                            "featuredproduct-list": {
+                                "component": "Ashish_Featuredproduct/js/view/featuredproduct/list",
+                                "template": "Ashish_Featuredproduct/featuredproduct/list"
+                            }
+                        }
+                    }
+                }
+            }
+    </script>

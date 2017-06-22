@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Created By: Ashish Ranade On : May 31, 2017 11:15:52 AM
+Project: magento2-develop
+File: list.html
+-->
+<table>
+    <thead>
+        <tr>
+            <th>Sku</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach: { data: getListFeaturedProduct(), as: 'item' }">
+        <tr>
+            <td data-bind="text: item.name"></td>
+        </tr>
+        <tr>
+            <td data-bind="text: item.price"></td>
+        </tr>
+        <tr>
+            <td data-bind="text: item.image"></td>
+        </tr>
+        <tr>
+            <td data-bind="text: item.special_price"></td>
+        </tr>
+        <tr>
+            <td data-bind="text: item.carturl"></td>
+        </tr>
+        <tr>
+            <td data-bind="text: item.wishlisturl"></td>
+        </tr>
+    </tbody>
+</table>

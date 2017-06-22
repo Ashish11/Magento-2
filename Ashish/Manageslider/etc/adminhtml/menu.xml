@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created By: Ashish Ranade On : Jun 5, 2017 4:35:56 PM
+Project: Magento_2
+File: menu.xml
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ashish_Manageslider::manage_slider" title="Manage Slider" translate="title" module="Ashish_Manageslider" parent="Magento_Backend::content" sortOrder="10" action="manageslider/slider" resource="Ashish_Manageslider::manage_slider"/>
+    </menu>
+</config>
+  

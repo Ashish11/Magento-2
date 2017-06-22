@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created By: Ashish Ranade On : Jun 5, 2017 4:40:30 PM
+Project: Magento_2
+File: routes.xml
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="manageslider" frontName="manageslider">
+            <module name="Ashish_Manageslider"/>
+        </route>
+    </router>
+</config>

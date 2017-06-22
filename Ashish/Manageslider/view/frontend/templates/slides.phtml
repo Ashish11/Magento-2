@@ -1,0 +1,21 @@
+<?php $sliders = $block->getSliders(); ?>
+<div class="slider1-area overlay-default index1">
+    <div class="bend niceties preview-1">
+        <div id="ensign-nivoslider-3" class="slides"> 
+            <?php foreach ($sliders as $key => $slider) { ?>
+                <img src="<?php echo $slider['image']; ?>" alt="slider" title="#slider-direction-<?php echo $key + 1; ?>"/> 
+            <?php } ?>
+        </div>
+        <?php foreach ($sliders as $key => $slider) { ?>
+            <div id="slider-direction-<?php echo $key + 1; ?>" class="t-cn slider-direction">
+                <div class="slider-content s-tb slide-<?php echo $key + 1; ?>">
+                    <div class="title-container s-tb-c">
+                        <?php echo $slider['banner_text']; ?>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+    </div>
+</div>
+<script src="<?php echo $block->getViewFileUrl('Ashish_Manageslider::js/jquery.nivo.slider.js'); ?>" type="text/javascript"></script>
+<script src="<?php echo $block->getViewFileUrl('Ashish_Manageslider::js/home.js'); ?>" type="text/javascript"></script>

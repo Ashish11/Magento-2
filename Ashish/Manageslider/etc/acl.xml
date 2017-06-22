@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+Created By: Ashish Ranade On : Jun 5, 2017 4:35:56 PM
+Project: Magento_2
+File: acl.xml
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Ashish_Manageslider::top" title="Manage Slider">
+                    <resource id="Ashish_Manageslider::manage_slider" title="Manage Slider"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

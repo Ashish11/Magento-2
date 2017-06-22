@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+Created By: Ashish Ranade On : Jun 15, 2017 5:53:20 PM
+Project: magento2-develop
+File: manageslider_slider_getslides.xml
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Ashish_Manageslider::css/animate.min.css"/>
+        <css src="Ashish_Manageslider::css/font-awesome.min.css"/>
+        <css src="Ashish_Manageslider::css/slider-style.css"/>
+        
+        <link src="Ashish_Manageslider::js/jquery.nivo.slider.js"/>
+    </head>
+</page>

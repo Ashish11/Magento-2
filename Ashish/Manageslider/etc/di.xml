@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created By: Ashish Ranade On : Jun 6, 2017 1:49:06 PM
+Project: magento2-develop
+File: di.xml
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">                                                                -->
+    <virtualType name="AshishManagesliderFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+        <arguments>
+            <argument name="appliers" xsi:type="array">
+                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="AshishManagesliderGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Ashish\Manageslider\Model\DataProvider</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">AshishManagesliderFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Ashish\Manageslider\Model\ResourceModel\Slider\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">ashish_slider</argument>
+            <argument name="resourceModel" xsi:type="string">Ashish\Manageslider\Model\ResourceModel\Slider</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="manageslider_listing_data_source" xsi:type="string">Ashish\Manageslider\Model\ResourceModel\Slider\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

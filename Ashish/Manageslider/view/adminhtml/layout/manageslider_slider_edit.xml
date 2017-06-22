@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created By: Ashish Ranade On : Jun 8, 2017 1:34:27 PM
+Project: magento2-develop
+File: manageslider_slider_edit.xml
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <head>
+        <link src="Ashish_Manageslider::js/script.js"/>
+    </head>
+    <update handle="editor"/>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="manageslider_edit_form"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!--
+Created By: Ashish Ranade On : Jun 5, 2017 4:35:56 PM
+Project: Magento_2
+File: module.xml
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Ashish_Manageslider" setup_version="1.0.0" />
+</config>
