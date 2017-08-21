@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created By: Ashish Ranade On : Aug 17, 2017 3:37:31 PM
+Project: magento2-develop
+File: checkout_onepage_success.xml
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order.success.additional.info">
+            <block class="Ashish\Checkout\Block\Success" name="born.checkout" template="Ashish_Checkout::checkout/success.phtml" cacheable="false"/>
+        </referenceBlock>
+    </body>
+</page>

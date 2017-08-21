@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+Created By: Ashish Ranade On : Aug 16, 2017 3:40:35 PM
+Project: magento2-develop
+File: events.xml
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_predispatch">
+        <observer name="geolocation" instance="Ashish\GeoLocation\Observer\GetSaveIpAddress" />
+    </event>
+</config>

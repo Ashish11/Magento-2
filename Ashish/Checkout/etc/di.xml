@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created By: Ashish Ranade On : Aug 17, 2017 3:33:55 PM
+Project: magento2-develop
+File: di.xml
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../vendor/magento/framework/ObjectManager/etc/config.xsd">
+    <preference for="Magento\Checkout\Block\Onepage\Success" type="Ashish\Checkout\Block\Success"/>
+</config>
