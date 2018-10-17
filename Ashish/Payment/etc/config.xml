@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <Ashish_payment>
+              <title>Ashish Payment</title>
+              <model>Ashish\Payment\Model\Payment</model>
+              <active>1</active>
+              <cctypes>AE,VI,MC,DI</cctypes>
+            </Ashish_payment>
+        </payment>
+    </default>
+</config>
