@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created By: Ashish Ranade On : 17 Dec, 2019 8:59:55 PM
+Project: Training
+File: mview.xml
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Mview/etc/mview.xsd">
+    <view id="ashish_custom_indexer" class="Ashish\IndexerExample\Model\Flat" group="indexer">
+        <subscriptions>
+            <table name="catalog_product_entity" entity_column="entity_id" />
+        </subscriptions>
+    </view>
+</config>
