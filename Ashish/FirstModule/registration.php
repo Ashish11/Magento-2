@@ -9,4 +9,4 @@
 use \Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Ashish_FirstModule',
-        __DIR__);
+    __DIR__);
