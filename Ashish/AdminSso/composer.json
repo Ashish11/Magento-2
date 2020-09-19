@@ -1,0 +1,21 @@
+{
+  "name": "ashish/admin-sso",
+  "version": "1.0.0",
+  "description": "Admin SSO module",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-backend": "101.0.*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Ashish\\AdminSso\\": ""
+    }
+  }
+}

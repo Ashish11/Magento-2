@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ashishadminsso" translate="label" sortOrder="10">
+            <label>Admin SSO</label>
+        </tab>
+        <section id="adminsso" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Admin SSO Configuration</label>
+            <tab>ashishadminsso</tab>
+            <resource>Ashish_AdminSso::sso</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Enable</label>
+                    <comment>This field is used to set SSO module enable or not.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="decryption_key" translate="label" type='obscure' sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Decryption Key</label>
+                    <comment>This field is used to save encryption key.</comment>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+                <field id="decryption_iv" translate="label" type='obscure' sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Decryption IV</label>
+                    <comment>This field is used to save encryption IV value.</comment>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+                <field id="ciphering" translate="label" type='text' sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Decryption Method</label>
+                    <comment>This field is used to save encryption method type.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
