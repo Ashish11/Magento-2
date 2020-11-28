@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="ashish" xsi:type="object">MyFirstModule\Mymodule\Console\MyFirstCommand</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference type="MyFirstModule\Mymodule\Model\MyFirstApi" for="MyFirstModule\Mymodule\Api\MyFirstApiInterface"/>
+    <preference type="MyFirstModule\Mymodule\Model\FirstApiData"
+                for="MyFirstModule\Mymodule\Api\Data\FirstApiDataInterface"/>
+    <type name="Magento\Catalog\Api\ProductRepositoryInterface">
+        <plugin name="customDataAttribute"
+                type="MyFirstModule\Mymodule\Plugin\CustomDataLoad" sortOrder="1"/>
+    </type>
+    <preference type="MyFirstModule\Mymodule\Model\CustomExtensionAttribute"
+                for="MyFirstModule\Mymodule\Api\Data\CustomExtensionAttributeInterface"/>
+    <type name="Magento\Framework\EntityManager\Operation\ExtensionPool">
+        <arguments>
+            <argument name="extensionActions" xsi:type="array">
+                <item name="Magento\Catalog\Api\Data\ProductInterface" xsi:type="array">
+                    <item name="read" xsi:type="array">
+                        <item name="customExtensionRead" xsi:type="string">MyFirstModule\Mymodule\Model\ReadHandler</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

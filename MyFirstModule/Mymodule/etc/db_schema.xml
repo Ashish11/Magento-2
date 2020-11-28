@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="custom_module_table" resource="default" engine="innodb" comment="Custom Module">
+        <column xsi:type="int" name="table_id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="name" comment="Name"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="table_id"/>
+        </constraint>
+    </table>
+</schema>

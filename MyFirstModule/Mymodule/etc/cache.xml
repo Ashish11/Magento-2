@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="urn:magento:framework:Cache/etc/cache.xsd">
+	<type name="mymodule_custom_cache" translate="label,description"
+		instance="MyFirstModule\Mymodule\Model\CacheType">
+		<label>My Module Cache Type Label</label>
+		<description>My Module Cache Type Description</description>
+	</type>
+</config>
