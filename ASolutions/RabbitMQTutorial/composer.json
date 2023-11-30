@@ -1,0 +1,17 @@
+{
+  "name": "a-solutions/module-rabbit-m-q-tutorial",
+  "version": "1.0.0",
+  "description": "This is a sample module to demonstrate RabbitMQ integration with Magento 2.4.6",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "ASolutions\\RabbitMQTutorial\\": ""
+    }
+  }
+}
